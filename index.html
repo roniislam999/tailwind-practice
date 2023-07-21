@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Css</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-color {
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <nav class="flex justify-between items-center px-20 py-10 ">
-            <div class="w-96">
-                <img src="icons/logo.png" alt="">
+    <header class="bg-[#FFFBF0;] w-full">
+        <nav class="md:flex justify-between items-center px-20 py-10 ">
+            <div>
+                <img class="w-30 md:w-96" src="icons/logo.png" alt="">
             </div>
-            <div class="flex gap-10 font-serif text-xl">
-                <a href="">Home</a>
-                <a href="">Porducts</a>
-                <a href="">About</a>
-                <a href="">Contacts</a>
+            <div class="md:flex gap-10 font-serif text-xl .font-color">
+                <a class="hover:bg-red-500 text-emerald-500" href="https://www.facebook.com/">Profile Me</a>
+                <a class="hover:bg-orange-500" href="">Porducts</a>
+                <a class="hover:bg-lime-500" href="">About</a>
+                <a class="hover:bg-emerald-500" href="">Contacts</a>
             </div>
-           
+
         </nav>
     </header>
-    <main>
+    <main class="bg-[#FFFBF0;]">
 
-    </main> 
+    </main>
     <footer>
 
-    </footer>     
+    </footer>
 </body>
+
 </html>
